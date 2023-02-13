@@ -49,7 +49,7 @@ class curl {
 	}	
 	function socks($sock) {
 		curl_setopt ($this->ch, CURLOPT_HTTPPROXYTUNNEL, true); 
-		curl_setopt ($this->ch, CURLOPT_PROXYTYPE, CURLPROXY_SOCKS5); 
+		curl_setopt ($this->ch, CURLOPT_PROXYTYPE, CURLPROXY_HTTP); 
 		curl_setopt ($this->ch, CURLOPT_PROXY, $sock);
 	}
 	function post($url, $data) {
